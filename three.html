@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+            box-sizing: border-box;
+        }
+        .container
+        {
+            width:100vw;
+            height:100vh;
+            background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+            background-blend-mode: multiply,multiply;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            width:800px;
+            height:400px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .rightBox img{
+            width:400px;
+            height:400px;
+        }
+        .leftBox{
+            width:400px;
+            height: 400px;
+            background-color: rgba(54, 3, 50, 0.832);
+            color:white;
+            padding:30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .item{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            gap:45px;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="leftBox">
+                <h1>
+                    Get insights that help your business grow
+                </h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias qui magni odit sit! Sapiente placeat laboriosam dolor modi ratione. Sint dolorem accusantium, nobis enim hic vel quasi voluptatum iure possimus.
+                </p>
+                <div class="item">
+                    <div class="item1">
+                        <h2>10K+</h2>
+                        <p>comments</p>
+                    </div>
+                    <div class="item2">
+                        <h2>214</h2>
+                        <p>Paid Users</p>
+                    </div>
+                    <div class="item3">
+                        <h2>12M+</h2>
+                        <p>Views</p>
+                    </div>
+                </div>
+            </div>
+            <div class="rightBox">
+                <img src="webdev.png" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
