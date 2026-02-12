@@ -48,6 +48,28 @@
             height:10%;
             background-color: #7d89e2;
             border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-right:20px;
+            padding-left:20px;
+        }
+        .leftBox{
+            /* width:fit-content; */
+            display:flex;
+            gap:15px;
+            height:100%;
+            display: flex;
+            align-items: center;
+        }
+        .imgBox{
+            height:3.2rem;
+            width:3.2rem;
+        }
+        .imgBox img{
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
         }
         #paymentButton{
             width:80%;
@@ -67,12 +89,25 @@
 <body>
     <div class="container">
         <div class="card">
-            <img src="webdev.png" alt="">
+            <img src="../images/webdev.png" alt="webdev">
             <div class="TextBox">
                   <h2>Order Summary</h2>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quo vitae quae id. Laudantium, odio nobis odit minima id perferendis.</p>
             </div>
-            <div id="amountBox"></div>
+            <div id="amountBox">
+                <div class="leftBox">
+                    <div class="imgBox">
+                        <img src="../images/icon.jpg" alt="icon">
+                    </div>
+                    <div class="textAmountBox">
+                        <p>Amount</p>
+                        <p>$99.9/year</p>
+                    </div>
+                </div>
+                <div class="rightBox">
+                    <a href="#">Change</a>
+                </div>
+            </div>
             <button id="paymentButton">
                 Proceed to Payment
             </button>
